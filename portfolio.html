@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Faizan | Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0d6efd;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      padding: 80px 20px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    section > .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2.section-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #0dcaf0;
+    }
+
+    .card-custom {
+      border: none;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.07);
+      box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+      padding: 25px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+    }
+
+    .btns-section {
+      background-color: #111;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .btn-glow {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 26px;
+      font-weight: 600;
+      border: none;
+      border-radius: 14px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 0.3s ease;
+      background: linear-gradient(135deg, #fc00ff, #00dbde);
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.5), 0 0 50px rgba(0, 219, 222, 0.4);
+    }
+
+    .btn-glow:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.8), 0 0 70px rgba(0, 219, 222, 0.6);
+    }
+
+    .btn-glow i {
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-glow:hover i {
+      transform: translateY(-3px) scale(1.2);
+    }
+
+    #about     { background-image: url('https://images.unsplash.com/photo-1606761568499-e3c0f6730be1?auto=format&fit=crop&w=1950&q=80'); }
+    #qualifications { background-image: url('https://images.unsplash.com/photo-1518131679105-7a4f45f7a7b2?auto=format&fit=crop&w=1950&q=80'); }
+    #skills    { background-image: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1950&q=80'); }
+    #services  { background-image: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1950&q=80'); }
+    #projects  { background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1950&q=80'); }
+
+    .project-card h5 {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .project-card p {
+      color: #dddddd;
+    }
+
+    @media (max-width: 576px) {
+      .profile-img {
+        width: 80px;
+        height: 80px;
+        top: 15px;
+        left: 15px;
+      }
+      h2.section-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile Picture -->
+  <img src="3.jpg" alt="Profile Picture" class="profile-img" />
+
+  <!-- About Me -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="card-custom">
+        <p>
+Hi! I'm <strong>Muhammad Faizan</strong> — a passionate <strong>AI enthusiast</strong> and <strong>Frontend Developer</strong> with a flair for building intelligent, user-friendly web applications. I specialize in combining the power of <strong>Machine Learning</strong> with elegant UI designs to solve real-world problems.
+</p>
+<p>
+With a strong foundation in <strong>Python, ML, Streamlit, and Bootstrap</strong>, I bring ideas to life through clean code and creative interfaces. Whether it's a smart AI solution or a visually stunning website, I enjoy turning complex challenges into simple, functional apps.
+</p>
+<p>
+I'm also active on <strong>Fiverr</strong>, offering reliable freelancing services including custom ML tools, dashboards, and responsive web design.
+</p>
+<p>
+Let’s build something innovative together!
+</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications -->
+  <section id="qualifications">
+    <div class="container">
+      <h2 class="section-title">My Qualifications</h2>
+<div class="card-custom">
+  <ul class="list-unstyled">
+    <li><i class="bi bi-mortarboard-fill text-info"></i> <strong>Matriculation (Science)</strong> — Scored <strong>93%</strong></li>
+    <li><i class="bi bi-mortarboard-fill text-info"></i> <strong>Intermediate (ICS)</strong> — Scored <strong>81%</strong></li>
+    <li><i class="bi bi-book-half text-info"></i> <strong>Bachelor in Computer Science</strong> — Currently enrolled in <strong>5th semester</strong> at University of Lahore</li>
+    <li><i class="bi bi-bar-chart-fill text-info"></i> Current CGPA: <strong>3.3</strong></li>
+  </ul>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <<h2 class="section-title">My Skills</h2>
+<div class="card-custom">
+  <ul class="list-unstyled">
+    <li><i class="bi bi-cpu text-info"></i> <strong>Machine Learning</strong> — Model building, training, evaluation, and deployment using Scikit-learn, Pandas, NumPy</li>
+    <li><i class="bi bi-database-fill-gear text-info"></i> <strong>Data Science</strong> — Data cleaning, EDA, preprocessing, and working with real-world datasets</li>
+    <li><i class="bi bi-braces text-info"></i> <strong>Python Programming</strong> — Writing clean, efficient code for AI & automation</li>
+    <li><i class="bi bi-window-sidebar text-info"></i> <strong>Frontend Development</strong> — Responsive design using HTML, CSS, Bootstrap</li>
+    <li><i class="bi bi-diagram-3-fill text-info"></i> <strong>Streamlit</strong> — Building fast, interactive ML web apps</li>
+    <li><i class="bi bi-git text-info"></i> <strong>Git & GitHub</strong> — Version control and collaboration on projects</li>
+  </ul>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+<div class="card-custom">
+  <ul class="list-unstyled">
+    <li><i class="bi bi-robot text-info"></i> <strong>AI-Powered Web Applications</strong> — Building intelligent apps using Machine Learning & Streamlit</li>
+    <li><i class="bi bi-layout-text-window text-info"></i> <strong>Frontend UI Design</strong> — Crafting responsive and modern interfaces using HTML, CSS, and Bootstrap</li>
+    <li><i class="bi bi-bar-chart-line text-info"></i> <strong>Data Analysis & Automation</strong> — Visualizing data and automating processes using Python</li>
+    <li><i class="bi bi-brush text-info"></i> <strong>Data Cleaning & Preprocessing</strong> — Preparing datasets for ML models by handling missing data, outliers, and transformations</li>
+  </ul>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card card-custom project-card">
+            <h5>AI cancer Predictor</h5>
+            <p>A machine learning-based web app that predicts cancer risk from patient data using medical datasets. Built with Python and Streamlit for accurate and fast predictions.</p>
+            <a href="https://cancerpredictorapp-eiyttceghrwbabkrxjuoag.streamlit.app/" class="btn btn-outline-info" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom project-card">
+            <h5>Amazon Product Search Engine</h5>
+            <p>An AI-based app that recommends similar Amazon products based on user input using TF-IDF and cosine similarity. Built with Python and Streamlit.</p>
+            <a href="https://newamzonepredictor-tnmrhobresuacgctnyacz8.streamlit.app/" class="btn btn-outline-info" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom project-card">
+            <h5>Crop Yield Production Predictor</h5>
+            <p>🌾 A Streamlit-based ML app that predicts crop yield per country using environmental and agricultural features like rainfall, pesticides, temperature, etc.</p>
+            <a href="https://crop-yieldpredictor-fmfr6uwzwfjg49btgbhkd9.streamlit.app/" class="btn btn-outline-info" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glowing Buttons Section with Functionality -->
+  <section class="btns-section">
+    <div class="container">
+      <a href="https://drive.google.com/file/d/1nbq-RCQkZMtVzJUEhn-BSQDZoC8SiwdZ/view?usp=sharing" class="btn-glow" target="_blank" data-bs-toggle="tooltip" title="View or Download My Resume">
+        <i class="bi bi-download"></i> Download Resume
+      </a>
+      <a href="https://github.com/faizy5452" class="btn-glow" target="_blank" data-bs-toggle="tooltip" title="Visit My GitHub Profile">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+      <a href="https://pk.linkedin.com/in/malik-faizan-137b762b0?trk=profile-badge" class="btn-glow" target="_blank" data-bs-toggle="tooltip" title="Connect with Me on LinkedIn">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://www.fiverr.com/my_buying_profile?source=avatar_menu_profile" class="btn-glow" target="_blank" data-bs-toggle="tooltip" title="Hire Me on Fiverr">
+        <i class="bi bi-stars"></i> Fiverr
+      </a>
+      <br><br>
+      <a href="#about" class="btn-glow" data-bs-toggle="tooltip" title="Scroll to Top">
+        <i class="bi bi-arrow-up-circle-fill"></i> Back to Top
+      </a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+</body>
+</html>
